@@ -8,12 +8,12 @@ public class EmployeeFixWage extends EmployeeBase {
     public EmployeeFixWage(String name, String depart, int sal) {
         super.name = name;
         super.depart = depart;
-        this.salRate = sal;
+        super.salaryRate = sal;
     }
 
     @Override
-    public double calcWage(int rateSal) {
-        avSalary = rateSal;
+    public double calcWage() {
+        avSalary = salaryRate;
         return avSalary;
     }
 

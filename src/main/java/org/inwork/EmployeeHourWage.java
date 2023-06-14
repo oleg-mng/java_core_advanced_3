@@ -3,18 +3,17 @@ package org.inwork;
 public class EmployeeHourWage extends EmployeeBase {
     //    String name;
 //    String depart;
-    int salRate;
+//    int salRate;
 
     public EmployeeHourWage(String name, String depart, int sal) {
         super.name = name;
         super.depart = depart;
-        this.salRate = sal;
+        super.salaryRate = sal;
     }
 
     @Override
-    public double calcWage(int rateSal) {
-        super.calcWage(rateSal);
-        return avSalary;
+    public double calcWage() {
+        return super.calcWage();
     }
 
     @Override
