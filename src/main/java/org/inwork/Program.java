@@ -23,5 +23,8 @@ public class Program {
             System.out.println(employeeBase.toString());
         }
 
+        System.out.println("realization output for class EmployeeArray: ");
+
+
     }
 }
