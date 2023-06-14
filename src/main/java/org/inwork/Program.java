@@ -24,6 +24,7 @@ public class Program {
         }
 
         System.out.println("realization output for class EmployeeArray: ");
+        EmployeeArray.employeeArrayOutput(EmployeeArray.employeeArrayBuild());
 
 
     }
