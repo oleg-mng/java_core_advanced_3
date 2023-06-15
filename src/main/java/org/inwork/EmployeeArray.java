@@ -13,8 +13,10 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
     }
     @Override
     public int compareTo(EmployeeArray e) {
-        return (int) (this.getAvSalary() - e.getAvSalary());
+//        return (int) (this.getName().compareTo(e.getName()));
 //        return Double.compare(this.getAvSalary(), e.getAvSalary());
+//        return (int) (this.getAvSalary() - e.getAvSalary());
+        return (int) (this.salaryRate - e.salaryRate);
 
     }
 
@@ -35,8 +37,8 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
                 new EmployeeArray("Andrey", "IT", 790),
         };
 //        Collections.sort(employeeArrays, salaryComparator);
-
-        Arrays.sort(employeeArrays, new SalaryComparator());
+//
+//        Arrays.sort(employeeArrays, new SalaryComparator());
 //        Comparator<Object> comparator = Comparator.comparing(obj -> obj.getClass());
 //        Collections.sort(employeeArrays, comparator);
 

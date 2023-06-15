@@ -28,12 +28,9 @@ public class Program {
 
         System.out.println();
         System.out.println("realization output for class EmployeeArray: ");
+
 //        EmployeeArray.employeeArrayOutput(EmployeeArray.employeeArrayBuild());
         EmployeeArray.employeeArrayOutput(EmployeeArray.sortAr(EmployeeArray.employeeArrayBuild()));
-
-
-//        SalaryComparator salaryComparator = new SalaryComparator();
-//        EmployeeArray.employeeArrayBuild().sort(salaryComparator);
 
 
     }
