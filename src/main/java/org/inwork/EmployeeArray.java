@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeArray>, Comparator<EmployeeArray> {
+public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeArray> {
 
     public EmployeeArray(String name, String depart, int sal) {
         super.name = name;
@@ -13,8 +13,8 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
     }
     @Override
     public int compareTo(EmployeeArray e) {
-//        return (int) (this.avSalary - e.avSalary);
-        return Double.compare(this.getAvSalary(), e.getAvSalary());
+        return (int) (this.getAvSalary() - e.getAvSalary());
+//        return Double.compare(this.getAvSalary(), e.getAvSalary());
 
     }
 
@@ -27,7 +27,6 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
 //    EmployeeFixWage emp2 = new EmployeeFixWage("Michael", "IT", 100);
 
     public static EmployeeArray[] employeeArrayBuild(){
-//        SalaryComparator salaryComparator = new SalaryComparator();
         EmployeeArray[] employeeArrays = new EmployeeArray[]
                 {
                 new EmployeeArray("Olga", "IT", 530),
@@ -43,6 +42,10 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
 
         return employeeArrays;
 
+    }
+    public static EmployeeArray[] sortAr(EmployeeArray[] ar) {
+        Arrays.sort(ar, new SalaryComparator());
+        return ar;
     }
 
     public static void employeeArrayOutput(EmployeeArray[] employeeArrays){
@@ -75,8 +78,8 @@ public class EmployeeArray extends EmployeeBase implements Comparable<EmployeeAr
         return avSalary;
     }
 
-    @Override
-    public int compare(EmployeeArray o1, EmployeeArray o2) {
-        return (int) (o1.avSalary - o2.avSalary);
-    }
+//    @Override
+//    public int compare(EmployeeArray o1, EmployeeArray o2) {
+//        return (int) (o1.avSalary - o2.avSalary);
+//    }
 }

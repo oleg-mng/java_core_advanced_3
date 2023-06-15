@@ -20,6 +20,7 @@ public class Program {
                 new EmployeeFixWage("Steven", "IT", 80000),
                 new EmployeeHourWage("Petra", "Sale", 630),
         };
+//        Arrays.sort(employeeBases, new SalaryComparator());
         for (EmployeeBase employeeBase : employeeBases) {
             employeeBase.calcWage();
             System.out.println(employeeBase.toString());
@@ -27,7 +28,9 @@ public class Program {
 
         System.out.println();
         System.out.println("realization output for class EmployeeArray: ");
-        EmployeeArray.employeeArrayOutput(EmployeeArray.employeeArrayBuild());
+//        EmployeeArray.employeeArrayOutput(EmployeeArray.employeeArrayBuild());
+        EmployeeArray.employeeArrayOutput(EmployeeArray.sortAr(EmployeeArray.employeeArrayBuild()));
+
 
 //        SalaryComparator salaryComparator = new SalaryComparator();
 //        EmployeeArray.employeeArrayBuild().sort(salaryComparator);
