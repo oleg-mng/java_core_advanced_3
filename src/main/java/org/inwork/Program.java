@@ -1,5 +1,7 @@
 package org.inwork;
 
+import java.util.Arrays;
+
 public class Program {
     public static void main(String[] args) {
         EmployeeHourWage employeeHourWage1 = new EmployeeHourWage("David", "IT", 540);
@@ -26,7 +28,7 @@ public class Program {
         System.out.println();
         System.out.println("realization output for class EmployeeArray: ");
         EmployeeArray.employeeArrayOutput(EmployeeArray.employeeArrayBuild());
-        System.out.println();
+
 //        SalaryComparator salaryComparator = new SalaryComparator();
 //        EmployeeArray.employeeArrayBuild().sort(salaryComparator);
 
